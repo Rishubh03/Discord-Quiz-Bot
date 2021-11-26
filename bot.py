@@ -9,7 +9,7 @@ def get_question():
 	question = ''
 	id = 1
 	correct_answer = 0
-	response = requests.get("http://127.0.0.1:8000/api/random")
+	response = requests.get("https://fathomless-beyond-96666.herokuapp.com/")
 	json_data = json.loads(response.text)
 	question += "Question: \n"
 	question += json_data[0]['title'] + "\n"
