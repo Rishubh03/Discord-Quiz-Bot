@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+"discord.py" = "*"
+djangorestframework = "*"
+requests = "==2.26.0"
+asyncio = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

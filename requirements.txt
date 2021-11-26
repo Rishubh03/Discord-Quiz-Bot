@@ -1,0 +1,5 @@
+pipenv install django
+pipenv install discord.py
+pipenv install djangorestframework
+pipenv install requests==2.26.0
+pipenv install asyncio==3.4.3
