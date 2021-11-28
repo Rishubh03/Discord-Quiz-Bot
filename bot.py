@@ -9,7 +9,7 @@ def get_question():
 	question = ''
 	id = 1
 	correct_answer = 0
-	response = requests.get("https://fathomless-beyond-96666.herokuapp.com/")
+	response = requests.get("https://127.0.0.1/api/random")
 	json_data = json.loads(response.text)
 	question += "Question: \n"
 	question += json_data[0]['title'] + "\n"
@@ -49,4 +49,4 @@ async def on_message(message):
 		else:
 			return await message.channel.send("Incorrect")
 
-client.run('OTEyODk2OTQ1MDc1NDEzMDEy.YZ2niA.XL_DJGFOgscqq3wSM2F6NkwNGmY')
+client.run('discord-bot-token')
